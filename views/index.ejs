@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chatbot</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .main-container {
+            margin: 5rem;
+            padding: 1rem 10rem;
+        }
+
+        .card {
+            min-height: 70vh;
+            height: max-content;
+        }
+
+        .container {
+            padding-left: 10rem;
+            padding-right: 10rem;
+        }
+
+        .mb-3 input {
+            min-height: 10vh;
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+
+    <div class="main-container">
+        <div class="container mt-5">
+            <div class="card shadow-lg p-4">
+                <h2 class="text-center mb-4">Clone &#128512
+                </h2>
+
+                <form action="/ask" method="POST">
+                    <div class="mb-3">
+                        <label for="question" class="form-label">Enter your question:</label>
+                        <input type="text" class="form-control" id="question" name="question">
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Ask</button>
+                </form>
+
+                <% if (answer) { %>
+                    <div class="mt-4 p-3 bg-success text-white rounded">
+                        <strong>Answer:</strong>
+                        <%= answer %>
+                    </div>
+                    <% } %>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
