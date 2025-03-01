@@ -1,3 +1,26 @@
+<<<<<<< HEAD
+{
+  "name": "chatbot-project",
+  "version": "1.0.0",
+  "description": "A conversational chatbot using fine-tuned AI.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "node-fetch": "^2.6.7"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "author": "",
+  "license": "ISC"
+}
+=======
 {
   "name": "challenge",
   "version": "1.0.0",
@@ -22,3 +45,4 @@
     "ejs": "^3.1.6",
   }
 }
+>>>>>>> 305023d7ef5a12f15bbc40b6c9fd90c6c4007736
