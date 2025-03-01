@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 {
   "name": "chatbot-project",
   "version": "1.0.0",
@@ -20,29 +19,3 @@
   "author": "",
   "license": "ISC"
 }
-=======
-{
-  "name": "challenge",
-  "version": "1.0.0",
-  "description": "a lot of things",
-  "main": "index.js",
-  "scripts": {
-    "test": "hello",
-    "start": "node index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "hola"
-  },
-  "keywords": [
-    "beki"
-  ],
-  "author": "new",
-  "license": "ISC",
-  "dependencies": {
-   "express": "^4.18.2",
-    "dotenv": "^16.0.0",
-    "ejs": "^3.1.6",
-  }
-}
->>>>>>> 305023d7ef5a12f15bbc40b6c9fd90c6c4007736
