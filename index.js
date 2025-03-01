@@ -9,7 +9,7 @@ app.set('view engine', 'ejs')
 app.use(express.urlencoded({ extended: true }));
 
 async function getAIResponse(userInput) {
-    const data = fs.readFileSync("./data.json", "utf8");
+    const data = fs.readFileSync("data.json", "utf8");
 
     const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
         method: "POST",
