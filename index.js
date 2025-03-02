@@ -4,7 +4,7 @@ const fs = require("fs");
 require("dotenv").config();
 const path = require('path');
 
-app.set('views', path.join(__dirname, 'views')); 
+app.set('view', path.join(__dirname, 'view')); 
 app.set('view engine', 'ejs')
 app.use(express.urlencoded({ extended: true }));
 
