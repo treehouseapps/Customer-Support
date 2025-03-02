@@ -12,8 +12,8 @@ async function getAIResponse(userInput) {
     // const data = fs.readFileSync("data.json", "utf8");
    // const data = path.join(__dirname, "public", "data.json");
 
-    const response = await fetch("https://th-customer-support.vercel.app/data.json");
-    const data = await response.json();
+    const responseData = await fetch("https://th-customer-support.vercel.app/data.json");
+    const data = await responseData.json();
 
     const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
         method: "POST",
