@@ -3,7 +3,9 @@ const app = express();
 const fs = require("fs").promises; // Use promises API for file reading
 require("dotenv").config();
 const mongoose = require('mongoose');
+const path = require('path');
 
+app.set('views', path.join(__dirname, 'views')); 
 app.set('view engine', 'ejs');
 app.use(express.urlencoded({ extended: true }));
 
